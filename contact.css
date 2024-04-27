@@ -1,0 +1,150 @@
+.contact {
+  display: flex;
+  background-color: aquamarine;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.picture {
+  width: 600px;
+  height: 550px;
+  background-image: url("image/img-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+}
+.feed {
+  width: 600px;
+  height: 550px;
+  background-color: rgb(243, 110, 243);
+}
+
+.feed .subfeed {
+  display: flex;
+}
+.feed a {
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+}
+.feed .link {
+  text-align: center;
+}
+
+.feed a:hover {
+  color: green;
+}
+.feed h1 {
+  text-align: center;
+}
+
+.feed .document {
+  margin-left: 50px;
+  display: flex;
+  /* text-align: center; */
+}
+.feed .document p {
+  margin-left: 5px;
+}
+
+.feed .document i {
+  color: rgb(242, 242, 155);
+}
+
+.feed .input {
+  border: none;
+  /* margin-top: -20px; */
+  margin-left: 100px;
+  background-color: rgb(243, 110, 243);
+}
+
+.tooltip {
+  position: relative;
+  /* display: inline-block; */
+}
+
+.tooltip button {
+  border: none;
+  background-color: rgb(243, 110, 243);
+  margin-left: 95px;
+}
+.tooltip button:hover {
+  color: red;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.feed .document-1 {
+  margin-left: 50px;
+  display: flex;
+  margin-top: 30px;
+}
+.feed .document-1 p {
+  margin-left: 5px;
+}
+
+.feed .document-1 i {
+  color: rgb(242, 242, 155);
+}
+
+.feed .fblink {
+  margin-left: 100px;
+  font-size: 16px;
+  color: black;
+}
+
+.feed .fblink:hover {
+  color: red;
+}
+
+.feed .document-2 {
+  margin-left: 50px;
+  display: flex;
+  margin-top: 30px;
+}
+.feed .document-2 p {
+  margin-left: 5px;
+}
+
+.feed .document-2 i {
+  color: rgb(242, 242, 155);
+}
+
+.feed .picture-1 img {
+  width: 300px;
+  height: 300px;
+  color: rgb(243, 110, 243);
+  margin-left: 10px;
+}

@@ -1,8 +1,6 @@
 .work {
   display: flex;
   justify-content: space-around;
-  /* align-items: center; */
-  /* margin-left: 130px; */
 }
 
 .work .feed {
@@ -28,44 +26,74 @@
   display: flex;
 }
 .feed .subfeed-1 img {
-  width: 600px;
   height: 350px;
+  --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+  --m: left var(--_i, 0%) top var(--_g), bottom var(--_i, 0%) left var(--_g),
+    top var(--_i, 0%) right var(--_g), right var(--_i, 0%) bottom var(--_g);
+  -webkit-mask: var(--m);
+  mask: var(--m);
+  filter: grayscale();
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+.feed .subfeed-1 img:hover {
+  --_i: 10%;
+  filter: grayscale(0);
 }
 
 .feed .subfeed-1 p {
-  padding-right: 100px;
+  padding-right: 110px;
   font-size: 35px;
   line-height: 40px;
   margin-left: 40px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .feed .subfeed-2 {
   display: flex;
 }
 .feed .subfeed-2 img {
-  width: 600px;
   height: 350px;
   margin-right: 60px;
   margin-left: 10px;
+  --s: 15px; /* size of the frame */
+  --b: 2px; /* border thickness */
+  --w: 400px; /* width of the image */
+  --c: #7b3b3b;
+
+  width: var(--w);
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding: calc(2 * var(--s));
+  --_g: var(--c) var(--b), #0000 0 calc(100% - var(--b)), var(--c) 0;
+  background: linear-gradient(var(--_g)) 50%/100% var(--_i, 100%) no-repeat,
+    linear-gradient(90deg, var(--_g)) 50% / var(--_i, 100%) 100% no-repeat;
+  outline: calc(var(--w) / 2) solid #0009;
+  outline-offset: calc(var(--w) / -2 - 2 * var(--s));
+  transition: 0.4s;
+  cursor: pointer;
+}
+.feed .subfeed-2 img:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: calc(var(--s) / -2);
+  --_i: calc(100% - 2 * var(--s));
 }
 
 .feed .subfeed-2 p {
   font-size: 35px;
   line-height: 40px;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .feed .subfeed-3 p {
   font-size: 35px;
   line-height: 40px;
-  padding-right: 40px;
+  padding-right: 70px;
 }
 .link {
   margin-top: 150px;
 }
 .link a {
-  /* margin-top: -300px; */
   position: fixed;
   text-decoration: none;
   font-size: 20px;

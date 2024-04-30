@@ -1,6 +1,9 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 .contact {
   display: flex;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   height: 100vh;
   align-items: center;
   justify-content: center;
@@ -15,9 +18,9 @@
   box-sizing: border-box;
 }
 .feed {
-  width: 600px;
+  width: 650px;
   height: 550px;
-  background-color: rgb(243, 110, 243);
+  /* background-color: rgb(243, 110, 243); */
 }
 
 .feed .subfeed {
@@ -42,32 +45,32 @@
 .feed .document {
   margin-left: 50px;
   display: flex;
-  /* text-align: center; */
 }
 .feed .document p {
   margin-left: 5px;
+  margin-top: -0.1px;
 }
 
 .feed .document i {
   color: rgb(242, 242, 155);
+  margin-right: 20px;
 }
 
 .feed .input {
   border: none;
-  /* margin-top: -20px; */
-  margin-left: 100px;
-  background-color: rgb(243, 110, 243);
+  /* background-color: rgb(243, 110, 243); */
+  margin-left: 3px;
 }
 
 .tooltip {
   position: relative;
-  /* display: inline-block; */
 }
 
 .tooltip button {
   border: none;
-  background-color: rgb(243, 110, 243);
-  margin-left: 95px;
+  background-color: white;
+  /* background-color: rgb(243, 110, 243); */
+  margin-left: -1px;
 }
 .tooltip button:hover {
   color: red;
@@ -76,7 +79,6 @@
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 140px;
-  background-color: #555;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -98,7 +100,7 @@
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent;
+  /* border-color: #555 transparent transparent transparent; */
 }
 
 .tooltip:hover .tooltiptext {
@@ -117,10 +119,11 @@
 
 .feed .document-1 i {
   color: rgb(242, 242, 155);
+  margin-right: 20px;
 }
 
 .feed .fblink {
-  margin-left: 100px;
+  /* margin-left: 100px; */
   font-size: 16px;
   color: black;
 }
@@ -140,11 +143,12 @@
 
 .feed .document-2 i {
   color: rgb(242, 242, 155);
+  margin-right: 20px;
 }
 
 .feed .picture-1 img {
   width: 300px;
   height: 300px;
-  color: rgb(243, 110, 243);
+  /* color: rgb(243, 110, 243); */
   margin-left: 10px;
 }

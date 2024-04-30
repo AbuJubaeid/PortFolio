@@ -23,52 +23,63 @@
         <div class="subfeed">
           <div>
             <div class="document">
-              <i class="fa-regular fa-envelope fa-3x"></i>
-              <p>Email Me =></p>
+              <i class="fa-regular fa-envelope fa-5x"></i>
+              <div>
+                <p>Email Me =></p>
+                <input
+                  class="input"
+                  value="abujubaeid2@gmail.com"
+                  id="myInput"
+                />
+                <div class="tooltip">
+                  <button onclick="myFunction()" onmouseout="outFunc()">
+                    <span class="tooltiptext" id="myTooltip"
+                      >Copy to clipboard</span
+                    >
+                    click to copy email
+                  </button>
+                </div>
+
+                <script>
+                  function myFunction() {
+                    var copyText = document.getElementById("myInput");
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999);
+                    navigator.clipboard.writeText(copyText.value);
+
+                    var tooltip = document.getElementById("myTooltip");
+                    tooltip.innerHTML = "Copied: " + copyText.value;
+                  }
+
+                  function outFunc() {
+                    var tooltip = document.getElementById("myTooltip");
+                    tooltip.innerHTML = "Copy to clipboard";
+                  }
+                </script>
+              </div>
             </div>
-            <input class="input" value="abujubaeid2@gmail.com" id="myInput" />
-
-            <div class="tooltip">
-              <button onclick="myFunction()" onmouseout="outFunc()">
-                <span class="tooltiptext" id="myTooltip"
-                  >Copy to clipboard</span
-                >
-                click to copy email
-              </button>
-            </div>
-
-            <script>
-              function myFunction() {
-                var copyText = document.getElementById("myInput");
-                copyText.select();
-                copyText.setSelectionRange(0, 99999);
-                navigator.clipboard.writeText(copyText.value);
-
-                var tooltip = document.getElementById("myTooltip");
-                tooltip.innerHTML = "Copied: " + copyText.value;
-              }
-
-              function outFunc() {
-                var tooltip = document.getElementById("myTooltip");
-                tooltip.innerHTML = "Copy to clipboard";
-              }
-            </script>
             <div class="document-1">
-              <i class="fa-brands fa-square-facebook fa-3x"></i>
-              <p>Message Me =></p>
+              <i class="fa-brands fa-square-facebook fa-5x"></i>
+              <div>
+                <p>Message Me =></p>
+                <a
+                  class="fblink"
+                  href="https://www.facebook.com/abujubaeid.pranto"
+                  >click to message in facebook</a
+                >
+              </div>
             </div>
-            <a class="fblink" href="https://www.facebook.com/abujubaeid.pranto"
-              >click to message in facebook</a
-            >
-
             <div class="document-2">
-              <i class="fa-brands fa-linkedin-in fa-3x"></i>
-              <p>Message Me =></p>
+              <i class="fa-brands fa-linkedin-in fa-5x"></i>
+              <div>
+                <p>Message Me =></p>
+
+                <a class="fblink" href="">click to message in linkedin</a>
+              </div>
             </div>
-            <a class="fblink" href="">click to message in linkedin</a>
           </div>
           <div class="picture-1">
-            <img src="image/img-2.jpg" alt="" />
+            <img src="image/img-2.png" alt="" />
           </div>
         </div>
       </div>
